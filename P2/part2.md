@@ -2,7 +2,7 @@
 
 Next you'll add the ground. We're going to add two ground sprites separately so that we can animate the ground to move. But before we can add ground sprites, we need to create a `CCPhysicsNode`. Since in the end, we want the ground to be a physical object that the bird collides with, we need physics container for all of our ground sprites, as well for our future physics objects as well, such as the obstacles and the Flappy Bird object.
 
-From the Cocos2D object section in the left margin, drag a Physics Node object beneath the bush. Set it's position to `0, 106`; content size type to `%, %`; and gravity to `0, -700`.
+From the Cocos2D object section in the left margin, drag a Physics Node object beneath the bush. Set it's position to `0, 106`; content size type to `%, %`; and gravity to `0, -850`.
 
 </br>
 <img src="part2-ccphysicsnode-1.png" style="width: 75%; height: 75%">

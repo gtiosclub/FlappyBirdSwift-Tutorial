@@ -8,7 +8,7 @@ Now we'll get into real game development. Use finder and open up your `.ccbproj`
 
 We want to create a new scene for our game. This spritebuilder scene will contain the assets and code connections for our actual code in XCode and will represent what we will see when we start up the application.
 
-While in Spritebuilder, go to `File > New > File...` and create a .ccb called `MainScene.ccb` selecting the `Scene` option.
+While in Spritebuilder, go to `File > New > File...` and create a `.ccb` called `MainScene.ccb` selecting the `Scene` option.
 
 </br>
 <img src="part1-create.png" style="width: 75%; height: 75%">
@@ -20,7 +20,7 @@ You should see a new iphone looking scene in the center of the screen.
 <img src="part1-scene.png" style="width: 50%; height: 50%">
 </br>
 
-Select `CCNode` in the area below the iphone screen underneath "Sound effects" This is the hierarchy area for all Cocos2D objects you add in including assets, physics objects, and other .ccb files. In this case, when you make a .ccb scene, the scene is represented by a special `CCNode` root.
+Select `CCNode` in the area below the Pphone screen underneath "Sound effects" This is the hierarchy area for all Cocos2D objects you add in including assets, physics objects, and other `.ccb` files. In this case, when you make a `.ccb` scene, the scene is represented by a special `CCNode` root.
 
 </br>
 <img src="part1-scene-ccnode.png" style="width: 50%; height: 50%">
