@@ -1,5 +1,7 @@
 ## Part 0: Setting up your Github
 
+This tutorial will teach you how to build FlappyBird with Swift and SpriteBuilder. This tutorial was adapted from [MakeSchool's FlappyBird Tutorial](https://github.com/MakeSchool/FlappyBirdSwift-SpriteBuilder). Go check out www.makeschool.com/tutorials they've got some great stuff!
+
 Github is a platform to easily save your code onto a cloud where you can track the changes you've made over time. It also allows others to see and contribute to your open source code. To set up github you need to do two things:
 
 1. Sign up for an account at [Github](https://www.github.com)
