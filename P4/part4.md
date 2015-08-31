@@ -3,13 +3,13 @@
 Go to `File > New... > File...` And create a new Cocoa Touch Class. Call this new new class "MainScene" and make it a subclass of GamePlayScene.
 
 </br>
-<img src="part4-mainscene-creation.png" style="width: 75%; height: 75%">
+<img src="part4-mainscene-creation.png" style="width: 75%; height: 75%; max-width: 400px">
 </br>
 
 Save it in `FlappySwift.spritebuilder/Source`, and then click on the newly selected `MainScene.swift` file. You should see this set of code:
 
 </br>
-<img src="part4-mainscene-initial-look.png" style="width: 75%; height: 75%">
+<img src="part4-mainscene-initial-look.png" style="width: 75%; height: 75%; max-width: 400px">
 </br>
 
 This is how you initialize a subclass in Swift. You have the name of the class, a colon, followed by the name of the superclass. Now that the MainScene Class is created, `MainScene.ccb` will now be initialized with this class.
@@ -17,13 +17,13 @@ This is how you initialize a subclass in Swift. You have the name of the class, 
 Go ahead and click on the play button in the top right of XCode:
 
 </br>
-<img src="part4-play-button.png" style="width: 75%; height: 75%">
+<img src="part4-play-button.png" style="width: 75%; height: 75%; max-width: 400px">
 </br>
 
 This will compile the code and then run it in a separate iPhone simulator. You should see a screen like this, with the ground already being animated:
 
 </br>
-<img src="part4-initial-play.png" style="width: 50%; height: 50%">
+<img src="part4-initial-play.png" style="width: 50%; max-width: 320px">
 </br>
 
 You can also change your simulator to other iPhone versions in order to test different screen sizes. If you don't have a retina screen and the simulator is too big, you can go to `Window > Scale` to change the size of the simulator.
@@ -68,7 +68,7 @@ As for `_gamePhysicsNode`, notice how `GamePlayScene` implements the `CCPhysicsC
 Your code should look like this in the end:
 
 </br>
-<img src="part4-final-code-look.png" style="width: 75%; height: 75%">
+<img src="part4-final-code-look.png" style="width: 75%; height: 75%; max-width: 400px">
 </br>
 
 When you're done go to the [next step, part 5](../P5/part5.md)

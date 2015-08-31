@@ -24,7 +24,7 @@ The `CCBReader.load("Character")` function finds the published `Character.ccb` f
 Now run the program. You should see the Bird show up and drop to the ground.
 
 </br>
-<img src="part5-flappy-on-the-ground.png" style="width: 50%; height: 50%">
+<img src="part5-flappy-on-the-ground.png" style="width: 320px; max-width: 320px">
 </br>
 
 When you're done go to the [next step, part 6](../P6/part6.md)

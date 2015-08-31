@@ -3,7 +3,7 @@
 Open up the `FlappyBirdSwift-Template/FlappySwift.spritebuilder` folder with Finder and double click the `.xcodeproj` file. XCode should open.
 
 </br>
-<img src="part3-xcodeproj.png" style="width: 50%; height: 50%">
+<img src="part3-xcodeproj.png" style="width: 50%; height: 50%; max-width: 300px">
 </br>
 
 Welcome to XCode! Here you will write code for the objects that you created in Spritebuilder. Here is where the explanations get lengthy so brace yourself.
@@ -11,7 +11,7 @@ Welcome to XCode! Here you will write code for the objects that you created in S
 In the left margin of XCode you'll see a whole bunch of files that we already have programmed for you.
 
 </br>
-<img src="part3-left-margin.png" style="width: 50%; height: 50%">
+<img src="part3-left-margin.png" style="width: 50%; height: 50%; max-width: 300px">
 </br>
 
 Go ahead and take a brief look at the files and look over the code. **Make sure that when you're going through this tutorial to read and attempt to understand the code**, especially the code that we already wrote for you. This tutorial won't work unless you take the time to read the code and try to use it in your own applications.
@@ -29,7 +29,7 @@ In `Goal.swift` we have the initialization code for the `CCNode` that handles co
 Also take a look at `GamePlayScene.swift`. This class is mainly just for animations, and the moving of the scene. In addition if you take a look at the variable initialization area:
 
 </br>
-<img src="part3-gameplayscene-linking.png" style="width: 75%; height: 75%">
+<img src="part3-gameplayscene-linking.png" style="width: 75%; height: 75%; max-width: 400px">
 </br>
 
 You'll notice that it declares three variables with `_gamePhysicsNode`, `_ground1`, and `_ground2`. Remember when we wrote document roots for our CCPhysicsNode and ground objects in Spritebuilder? This means that `_gamePhysicsNode`, `_ground1`, and `_ground2` will all be initialized with those objects when the GamePlayScene code is run. Manipulating these variables will manipulate the document root linked objects in the Scene in real time. For example, if I wrote code in XCode to change the position of `_ground1`:

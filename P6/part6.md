@@ -22,8 +22,10 @@ override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
 
 Run the program. Every time you tap you should see your bird flap!
 
-###### Understanding Optionals ? and !
+#### Understanding Optionals ? and !
 
-The optional `?` notes that if hero is `nil`, `NULL` or has no value, `flap()` will not be executed--which makes sense because if flappy bird doesn't exist, there is no reason we should call flap() on a null object. The special part of `?` is that the program continues gracefully and doesn't call that function. `?` is equivalent to using an if statement to check if `hero` exists, i.e. `if (hero != nil)`.
+The optional `?` notes that if hero is `nil`, `NULL` or has no value, `flap()` will not be executed--which makes sense because if flappy bird doesn't exist, there is no reason we should call `flap()` on a null object. The special part of `?` is that the program continues gracefully and doesn't call that function. Using `?` is equivalent to using an if statement to check if `hero` exists, i.e. `if (hero != nil)`.
 
 This is different to the forced optional `!`, where if hero is `nil`, the program will return an error and crash. Using optionals is a key aspect of dealing with objects in Swift and allows for specialized error checking. In this case, even if the flappy bird doesn't exist and I tap on the screen, the program will not crash and continue fine. If I had `hero!.flap()` and hero was not initialized, the program would crash and show what went wrong.
+
+When you're done go to the [next step, part 7](../P7/part7.md)
