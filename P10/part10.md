@@ -45,6 +45,6 @@ func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!,hero: CCNode!,goal: C
 }
 ```
 
-Go ahead and run your program. Your bird should be able to pass through the pipes and consequently update the score label.
+Go ahead and run your program. Your bird should be able to pass through the pipes and consequently update the score label. That's it you're done! Congratz!
 
 When you're done go to the [next step, part 11](../P11/part11.md)

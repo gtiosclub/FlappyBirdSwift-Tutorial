@@ -1,0 +1,41 @@
+Part 11: Pushing your changes to Github
+
+Now that you're done, you can push your changes to github!
+
+Open up your terminal and navigate into the `FlappyBirdSwift-Template` folder using `cd`.
+
+First we're going to type:
+```
+git status
+```
+
+This command tell you the changes you made to your local repository compared to the last commit that you've made. For example, it will tell you that you created a new `MainScene.ccb` file, a `MainScene.swift` file, modified `Character.ccb`, etc.
+
+Now we want to add these changes to the "commit". The commit is a snapshot of your code that you **add** your changes to. Type in:
+
+```
+git add --all
+```
+
+This will add all of the changes that you've made to the commit so that you can save a snapshot of what your code looks like. Altnernatively you can add individual files by saying for example `git add MainScene.ccb` to add individual files. The tag --all means that you want to add all of your changes.
+
+Type `git status` again. You should see that all of your files are in green. This means that you changes are ready to be commited as a snapshot. If you wanted to remove all the changes that you added, you would type `git reset`, but don't do that now.
+
+Go ahead and commit your changes.
+
+```
+git commit -m "some message that says what progress you've made"
+```
+
+
+
+<!-- Imagine that you have a cart and you want to buy some things to take home. First you want to see what in the supermarket that you can buy, so you use `git status` to see all the things you can buy. Then you can `git add` the items into your cart, and then when you're at the checkout and you're paying for the items, you `git commit` to buying the items. Finally, you take the items home by `git push`ing the cart to your car to take it home. This is a horrible analogy and I hope none of you understood that.
+
+In other words, you want to follow these specific order of commands in order to save your code to github.
+
+```
+git status
+git add --all
+git commit -m "some message that says what progress you've made"
+git push origin master
+``` -->
