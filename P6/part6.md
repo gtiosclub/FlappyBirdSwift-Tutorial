@@ -17,8 +17,13 @@ Now we'll implement the touching mechanism. Whenever you touch the screen, you c
 override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
     // move up and rotate
     hero?.flap()
+
+    //resets the time so that the bird doesn't rotate immediately after jumping
+    sinceTouch = 0;
 }
 ```
+
+In gameplay we have a sinceTouch variable to delay the tilt of the bird until after a certain period of time after a `flap()` call. Don't ask why, it just makes your game feel like the original thing.
 
 Run the program. Every time you tap you should see your bird flap!
 

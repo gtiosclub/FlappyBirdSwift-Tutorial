@@ -77,7 +77,7 @@ into:
 _obstaclesLayer.addChild(obstacle)
 ```
 
-Run the program and the pipes should appear in the right zOrder.
+Run the program and the pipes should appear in the right zOrder. By the way, if you try going between the pipes you'll notice that your bird doesn't go through. This is not a bug; we'll fix this problem later on in part 10.
 
 </br>
 <img src="part7-pipes-in-proper.png" style="width: 75%; height: 75%; max-width: 320px">

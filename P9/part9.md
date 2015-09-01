@@ -26,7 +26,7 @@ In addition, let's add a restart button to MainScene.ccb. In the node menu, drag
 <img src="part9-restart-button-spritebuilder.png" style="width: 75%; height: 75%; max-width: 750px">
 </br>
 </br>
-<img src="part9-restart-button-doc-root.png" style="width: 75%; height: 75%; max-width: 750px">
+<img src="part9-restart-button-doc-root.png" style="width: 75%; height: 75%; max-width: 320px">
 </br>
 
 When we set the document selector to "restart", every time the button is pressed it will call the function `restart()` in `MainScene.swift`. We're going to implement `restart()` later.
@@ -80,7 +80,39 @@ func gameOver() {
         runAction(shakeSequence)
     }
 }
+```
 
+Now we'll actually implement the collision function. Add another function in `MainScene.swift` that will handle the collision between `level` and `hero` objects:
+
+```
+func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!, hero: CCNode!,level: CCNode!) -> Bool {
+    gameOver()
+    return true
+}
+```
+
+Notice how our parameters are called `hero:` and `level:`? That means any Cocos2D Physics object with the collision type as "hero" will call this function on collision with another physics object with the "level" type collision. Don't ask me why it's just how it works. Alternatively you can set the parameters to `wildcard:` which will make it so that any object with any collision type will call the function. In addition to `ccPhysicsCollisionBegin` There's also `ccPhysicsCollisionPreSolve`, `ccPhysicsCollisionPostSolve`, and `ccPhysicsCollisionSeperate`. More information about these particular methods can be found on the [Cocos2D Documentation](http://cocos2d.spritebuilder.com/docs/api/Protocols/CCPhysicsCollisionDelegate.html)
+
+Now run the program and crash into a pipe and the ground. The app should game over and a restart button should appear in the middle of the screen.
+
+</br>
+<img src="part9-finished-result.png" style="width: 75%; height: 75%; max-width: 320px">
+</br>
+
+If your restart button is showing up before the game is over, you probably forgot to uncheck the `visible` checkbox for the restart button in SpriteBuilder.
+
+You'll probably also notice that if you tap on the screen when the game is over, your bird flies. Thats because even after game is over, you can still apply physics to the objects. Fix this problem by using an if statement that checks if the game is not over. In `touchBegan()`, modify your code to look something like this:
+
+```
+override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
+    if (!isGameOver) {
+        // move up and rotate
+        hero?.flap()
+
+        //resets the time so that the bird doesn't rotate immediately after jumping
+        sinceTouch = 0;
+    }
+}
 ```
 
 When you're done go to the [next step, part 10](../P10/part10.md)

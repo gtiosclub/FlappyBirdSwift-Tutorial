@@ -10,9 +10,9 @@ Github is a platform to easily save your code onto a cloud where you can track t
 Then, you need to fork our FlappyBird Template repository. Go to https://github.com/iosgatech/FlappyBirdSwift-Template, press the fork button on the top right, and select your own account to fork to.
 
 </br>
-<img src="part0-forkbutton.png" style="width: 50%; height: 50%">
+<img src="part0-forkbutton.png" style="width: 50%;  max-width: 320px">
 </br>
-<img src="part0-forkpopup.png" style="width: 50%; height: 50%">
+<img src="part0-forkpopup.png" style="width: 50%; max-width: 320px">
 </br>
 
 Congratz! You now have forked a repository! You now have copied over the repository over to your account, which now you can freely manipulate without modifying the original repository!
