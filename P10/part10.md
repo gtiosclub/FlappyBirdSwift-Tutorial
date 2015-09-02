@@ -28,11 +28,11 @@ self.physicsBody.collisionType = "goal"
 
 Switching `.sensor` to `true` allows objects to overlap and not physically collide, while still calling collision methods.
 
-In addition, whereas for the other objects such as ground and the top and bottom pipes, we set the collision type to "level" in SpriteBuilder. In this case, we set the `.collisionType` of the Goal object to "goal" manually by code because we can and it's free. This shows how anything you can do in SpriteBuilder you can do the same in XCode (though with more effort and more lines of code). If you wanted to you could have went to spritebuilder and set the goal node's collision type to "goal" to achieve the same effect.
+In addition, whereas for the other objects such as ground and the top and bottom pipes, we set the collision type to "level" in SpriteBuilder. In this case, we set the `.collisionType` of the Goal object to "goal" manually by code because we can and it's free. This shows how anything you can do in SpriteBuilder you can do the same in XCode (though with more effort and more lines of code). If you wanted to you could have went to SpriteBuilder and set the goal node's collision type to "goal" to achieve the same effect.
 
 Let's set the sensor's true to the pipes as well to emulate the original flappy bird game more closely. It doesn't matter if the bird has to collide physically with the pipes because the game will end on collision anyway. This makes it so that there are no physical rebounds and bugs that appear with the pipes upon collision. In `Obstacles.swift`, add a didLoadFromCCB() method and add set the `.physicsBody.sensor` of `_topPipe` and `_bottomPipe` to `true`. **Do this yourself without copy and pasting code.**
 
-Add two new variables to `MainScene.swift` at the top where you initialized the other file variables. One should be a `var` called `_scoreLabel` with a `weak` reference as a `CCLabelTTF!` optional type, and one should be a `var` called `points` as a `Int` intialized to `0`. **Do this yourself without copy and pasting code**
+Add two new variables to `MainScene.swift` at the top where you initialized the other file variables. One should be a `var` called `_scoreLabel` with a `weak` reference as a `CCLabelTTF!` optional type, and one should be a `var` called `points` as a `Int` initialized to `0`. **Do this yourself without copy and pasting code**
 
 Finally let's create the collision method. We want this method to update whenever the "hero" collides and passes through the "goal" node. Add this method to `MainScene.swfit`.
 
@@ -46,5 +46,9 @@ func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!,hero: CCNode!,goal: C
 ```
 
 Go ahead and run your program. Your bird should be able to pass through the pipes and consequently update the score label. That's it you're done! Congratz!
+
+</br>
+<img src="GamePreview.gif" style="width: 50%; height: 50%; max-width: 320x">
+</br>
 
 When you're done go to the [next step, part 11](../P11/part11.md)

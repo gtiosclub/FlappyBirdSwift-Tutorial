@@ -24,10 +24,18 @@ Type `git status` again. You should see that all of your files are in green. Thi
 Go ahead and commit your changes.
 
 ```
-git commit -m "some message that says what progress you've made"
+git commit -m "Completed basic Flappy Bird."
 ```
 
+This saves a snapshot to your local repository. If you so wish to, you can revert commits and go back to a previous commit using `git revert`.
 
+Finally, we want to sync up your local repository with the remote repository hosted on github.
+
+```
+git push origin master
+```
+
+Technically you can use `git push` and it should work as well. "origin" is the name of the remote repository and "master" is the name of the branch you're committing to. Typically you want your master to have the working copy of your program.
 
 <!-- Imagine that you have a cart and you want to buy some things to take home. First you want to see what in the supermarket that you can buy, so you use `git status` to see all the things you can buy. Then you can `git add` the items into your cart, and then when you're at the checkout and you're paying for the items, you `git commit` to buying the items. Finally, you take the items home by `git push`ing the cart to your car to take it home. This is a horrible analogy and I hope none of you understood that.
 

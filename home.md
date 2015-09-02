@@ -1,5 +1,10 @@
-# GT iOS Club
-Thursdays at 6PM at CCB 347
+## Announcements
+For our meeting on 9/03 do these 3 things:
+- Get XCode (App Store)
+- Get SpriteBuilder (App Store)
+- Get Github (github.com)
+
+We're meeting in 347 still, and we're starting FlappyBird. See y'all there!
 
 ## Schedule
 Date | Stuff
@@ -40,5 +45,5 @@ Date | Stuff
 4/28   | **DEAD WEEK**
 5/5    | **FINALS WEEK**
 
-## ATTENTION CORPORATE SPONSORS
+## For Corporate Sponsors
 If you would like to work with us, please send a quick email to iosgatech@gmail.com and we'll be more than happy to work with you.
