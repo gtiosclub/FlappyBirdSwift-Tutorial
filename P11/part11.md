@@ -37,8 +37,6 @@ git push origin master
 
 Technically you can use `git push` and it should work as well. "origin" is the name of the remote repository and "master" is the name of the branch you're committing to. Typically you want your master to have the working copy of your program.
 
-<!-- Imagine that you have a cart and you want to buy some things to take home. First you want to see what in the supermarket that you can buy, so you use `git status` to see all the things you can buy. Then you can `git add` the items into your cart, and then when you're at the checkout and you're paying for the items, you `git commit` to buying the items. Finally, you take the items home by `git push`ing the cart to your car to take it home. This is a horrible analogy and I hope none of you understood that.
-
 In other words, you want to follow these specific order of commands in order to save your code to github.
 
 ```
@@ -46,4 +44,10 @@ git status
 git add --all
 git commit -m "some message that says what progress you've made"
 git push origin master
-``` -->
+```
+
+Once you've pushed your code, you're done! Now make a really stupid flappybird knockoff!
+
+Liked this tutorial? Share it with your friends!
+
+Hate a certain explanation? Hate our horrible spelling issues? Hate this entire tutorial? Let us know so that we can make you hate it less! Email us at <a href="mailto:iosgatech@gmail.com?Subject=FlappyBirdTutorial: I hate this tutorial" target="_top">iosgatech@gmail.com</a>.
