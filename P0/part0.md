@@ -31,6 +31,6 @@ Proceed to clone the repository in that directory by typing in this line and rep
 git clone git@github.com:**your-username**/FlappyBirdSwift-Template.git
 ```
 
-A folder called `FlappBirdSwift-Template` should show up
+A folder called `FlappyBirdSwift-Template` should show up
 
 When you're done go to the [next step, Part 1](../P1/part1.md)
