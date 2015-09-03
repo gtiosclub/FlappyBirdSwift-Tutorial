@@ -1,4 +1,4 @@
-Part 11: Pushing your changes to Github
+## Part 11: Pushing your changes to Github
 
 Now that you're done, you can push your changes to github!
 
