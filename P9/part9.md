@@ -5,28 +5,28 @@ Now that we have most of assets set up, now we gotta set up the collision handle
 Open the project in SpriteBuilder and click on `Character.ccb`, then select the `CCSprite` root node. Click on the physics tab and look for a field called `Collision type`, and type in "hero" for the collision type.
 
 </br>
-<img src="part9-hero-collision-type.png" style="width: 75%; height: 75%; max-width: 750px">
+<img src="/assets/P9/part9-hero-collision-type.png" style="width: 75%; height: 75%; max-width: 750px">
 </br>
 
 Finally, click on `Obstacle.ccb` and select `pipe_bottom`.  Click on the physics tab and set "level" for the collision type. Do the same for `pipe_top`.
 
 </br>
-<img src="part9-pipe-collision-type.png" style="width: 75%; height: 75%; max-width: 750px">
+<img src="/assets/P9/part9-pipe-collision-type.png" style="width: 75%; height: 75%; max-width: 750px">
 </br>
 
 Then click on `MainScene.ccb` and select `ground1`, then set "level" for the collision type. Do the same for `ground2`.
 
 </br>
-<img src="part9-ground-collision-type.png" style="width: 75%; height: 75%; max-width: 750px">
+<img src="/assets/P9/part9-ground-collision-type.png" style="width: 75%; height: 75%; max-width: 750px">
 </br>
 
 In addition, let's add a restart button to MainScene.ccb. In the node menu, drag a generic button below the `CCPhysicsNode` **but not as a child of it**. Set it's position type to `%, %` and it's position to `50, 50`. Set it's `Title` to "Restart" and **uncheck** the `visible` checkbox up at the top. In addition, set the document root of the button to `_restartButton` and it's document selector to "restart"
 
 </br>
-<img src="part9-restart-button-spritebuilder.png" style="width: 75%; height: 75%; max-width: 750px">
+<img src="/assets/P9/part9-restart-button-spritebuilder.png" style="width: 75%; height: 75%; max-width: 750px">
 </br>
 </br>
-<img src="part9-restart-button-doc-root.png" style="width: 75%; height: 75%; max-width: 320px">
+<img src="/assets/P9/part9-restart-button-doc-root.png" style="width: 75%; height: 75%; max-width: 320px">
 </br>
 
 When we set the document selector to "restart", every time the button is pressed it will call the function `restart()` in `MainScene.swift`. We're going to implement `restart()` later.
@@ -37,7 +37,7 @@ Click on **publish** and switch back to XCode. In MainScene.swift, add the `rest
 
 ```
 func restart() {
-    var scene = CCBReader.loadAsScene("MainScene")
+    let scene = CCBReader.loadAsScene("MainScene")
     CCDirector.sharedDirector().replaceScene(scene)
 }
 ```
@@ -74,9 +74,9 @@ func gameOver() {
         hero?.stopAllActions()
 
         //shake the screen
-        var move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.1, position: ccp(0, 4)))
-        var moveBack = CCActionEaseBounceOut(action: move.reverse())
-        var shakeSequence = CCActionSequence(array: [move, moveBack])
+        let move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.1, position: ccp(0, 4)))
+        let moveBack = CCActionEaseBounceOut(action: move.reverse())
+        let shakeSequence = CCActionSequence(array: [move, moveBack])
         runAction(shakeSequence)
     }
 }
@@ -96,7 +96,7 @@ Notice how our parameters are called `hero:` and `level:`? That means any Cocos2
 Now run the program and crash into a pipe and the ground. The app should game over and a restart button should appear in the middle of the screen.
 
 </br>
-<img src="part9-finished-result.png" style="width: 75%; height: 75%; max-width: 320px">
+<img src="/assets/P9/part9-finished-result.png" style="width: 75%; height: 75%; max-width: 320px">
 </br>
 
 If your restart button is showing up before the game is over, you probably forgot to uncheck the `visible` checkbox for the restart button in SpriteBuilder.

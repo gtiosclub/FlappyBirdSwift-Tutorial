@@ -18,7 +18,7 @@ override func update(delta: CCTime) {
         // obstacle moved past left side of screen?
         if obstacleScreenPosition.x < (-obstacle.contentSize.width) {
             obstacle.removeFromParent()
-            obstacles.removeAtIndex(find(obstacles, obstacle)!)
+            obstacles.removeAtIndex(obstacles.indexOf(obstacle)!)
 
             // for each removed obstacle, add a new one
             spawnNewObstacle()
